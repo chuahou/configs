@@ -9,7 +9,7 @@
 apt update
 
 # install tools
-apt install git tmux gitg
+apt install git tmux gitg doxygen graphviz
 
 # TODO: Will add more things when I realise I need them
 

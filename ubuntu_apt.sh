@@ -11,5 +11,8 @@ apt update
 # install tools
 apt install git tmux gitg doxygen graphviz
 
+# install rust
+curl https://sh.rustup.rs -sSf | sh
+
 # TODO: Will add more things when I realise I need them
 

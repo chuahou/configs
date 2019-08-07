@@ -20,5 +20,10 @@ apt install libreoffice
 # install MS fonts
 apt install ttf-mscorefonts-installer
 
+# install touchpad indicator
+add-apt-repository ppa:atareao/atareao
+apt update
+apt install touchpad-indicator
+
 # TODO: Will add more things when I realise I need them
 

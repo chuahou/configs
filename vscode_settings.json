@@ -10,5 +10,8 @@
     "doxdocgen.generic.authorEmail": "",
     "doxdocgen.generic.authorTag": "",
     "doxdocgen.generic.dateFormat": "",
-    "doxdocgen.file.copyrightTag": []
+    "doxdocgen.file.copyrightTag": [],
+    "files.watcherExclude": {
+        "**/target/**": true
+    }
 }

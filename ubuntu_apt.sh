@@ -15,6 +15,7 @@ apt install build-essential pkg-config
 apt install vim git tmux gitg doxygen graphviz
 
 # install rust
+apt install curl
 curl https://sh.rustup.rs -sSf | sh
 
 # install libreoffice

@@ -8,11 +8,17 @@
 # update package lists
 apt update
 
+# install build tools
+apt install build-essential pkg-config
+
 # install tools
 apt install git tmux gitg doxygen graphviz
 
 # install rust
 curl https://sh.rustup.rs -sSf | sh
+
+# install libreoffice
+apt install libreoffice
 
 # TODO: Will add more things when I realise I need them
 

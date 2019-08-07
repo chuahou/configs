@@ -17,5 +17,8 @@ apt install vim git tmux gitg doxygen graphviz curl
 # install libreoffice
 apt install libreoffice
 
+# install MS fonts
+apt install ttf-mscorefonts-installer
+
 # TODO: Will add more things when I realise I need them
 

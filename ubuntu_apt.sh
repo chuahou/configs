@@ -12,11 +12,7 @@ apt update
 apt install build-essential pkg-config
 
 # install tools
-apt install vim git tmux gitg doxygen graphviz
-
-# install rust
-apt install curl
-curl https://sh.rustup.rs -sSf | sh
+apt install vim git tmux gitg doxygen graphviz curl
 
 # install libreoffice
 apt install libreoffice

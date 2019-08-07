@@ -12,7 +12,7 @@ apt update
 apt install build-essential pkg-config
 
 # install tools
-apt install git tmux gitg doxygen graphviz
+apt install vim git tmux gitg doxygen graphviz
 
 # install rust
 curl https://sh.rustup.rs -sSf | sh

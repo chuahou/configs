@@ -9,7 +9,7 @@
 apt update
 
 # install build tools
-apt install build-essential pkg-config cmake
+apt install build-essential pkg-config cmake binutils-dev
 
 # install tools
 apt install vim git tmux gitg doxygen graphviz curl

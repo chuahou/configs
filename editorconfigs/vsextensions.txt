@@ -1,0 +1,7 @@
+attilabuti.brainfuck-syntax
+bungcip.better-toml
+cschlosser.doxdocgen
+ms-python.python
+ms-vscode.cpptools
+rust-lang.rust
+vscodevim.vim

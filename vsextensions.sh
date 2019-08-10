@@ -1,3 +1,4 @@
+#!/bin/bash
 code --install-extension attilabuti.brainfuck-syntax
 code --install-extension bungcip.better-toml
 code --install-extension cschlosser.doxdocgen

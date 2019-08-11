@@ -28,3 +28,6 @@ fi
 
 # add cargo
 PATH="$HOME/.cargo/bin:$PATH"
+
+# add cross compiled gcc and binutils
+PATH="/usr/local/i386elfgcc/bin:$PATH"

@@ -11,6 +11,9 @@ then
     exit
 fi
 
+# install dependencies
+apt install -y libgmp3-dev libmpc-dev libmpfr-dev
+
 # find current gcc and ld
 export CC=`which gcc`
 export LD=`which ld`

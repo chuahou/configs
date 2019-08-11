@@ -5,6 +5,13 @@
 #
 # Run as root.
 
+# check for root
+if [ "$EUID" -ne 0 ]
+then
+    echo "Run as ROOT."
+    exit
+fi
+
 # update package lists
 apt update
 

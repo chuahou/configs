@@ -2,6 +2,13 @@
 #
 # VS extension management script.
 
+# check for root
+if [ "$EUID" -eq 0 ]
+then
+    echo "Do not run as ROOT."
+    exit
+fi
+
 # prints usage
 function print_usage
 {

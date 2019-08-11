@@ -12,7 +12,7 @@ then
 fi
 
 # install dependencies
-apt install -y libgmp3-dev libmpc-dev libmpfr-dev
+apt install -y libgmp3-dev libmpc-dev libmpfr-dev libncurses5-dev
 
 # find current gcc and ld
 export CC=`which gcc`
@@ -48,6 +48,16 @@ make all-gcc
 make all-target-libgcc
 make install-gcc
 make install-target-libgcc
+
+# install gdb
+curl -O http://ftp.rediris.es/mirror/GNU/gdb/gdb-7.8.tar.gz
+tar xf gdb-7.8.tar.gz
+rm gdb-7.8.tar.gz
+mkdir gdb-build
+cd gdb-build
+../gdb-7.8/configure --target="$TARGET" --prefix="$PREFIX" --program-prefix=i386-elf-
+make
+make install
 
 # leave and destroy directories
 cd ../../..

@@ -7,6 +7,11 @@ for dir in `find ${PWD}/.. -mindepth 1 -maxdepth 1 -type d`; do
     printstatus=0
     gitstatus=$(git status)
 
+    # if fatal, skip
+    if [ $? -ne 0 ]; then
+        continue
+    fi
+
     # check for unstaged
     echo $gitstatus | grep "nothing to commit" > /dev/null
     if [ $? -ne 0 ]; then

@@ -21,8 +21,8 @@ apt install build-essential pkg-config cmake
 # install tools
 apt install vim git tmux gitg doxygen graphviz curl
 
-# install libreoffice
-apt install libreoffice
+# install user applications
+apt install libreoffice vlc
 
 # install MS fonts
 apt install ttf-mscorefonts-installer

@@ -1,1 +1,4 @@
 alias rm="rm -i"
+alias please="sudo"
+alias fucking="sudo"
+alias meow="echo meow"

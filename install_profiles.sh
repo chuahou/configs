@@ -14,3 +14,4 @@ fi
 cp profiles/bash_aliases ~/.bash_aliases
 cp profiles/profile ~/.profile
 cp profiles/vimrc ~/.vimrc
+cp profiles/bashrc ~/.bashrc

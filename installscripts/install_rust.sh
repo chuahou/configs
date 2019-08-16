@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Installs other things not meant to be installed as root.
+# Installs rust.
 #
 # DO NOT RUN AS ROOT.
 

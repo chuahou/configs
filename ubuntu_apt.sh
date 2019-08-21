@@ -32,5 +32,8 @@ add-apt-repository ppa:atareao/atareao
 apt update
 apt install touchpad-indicator
 
+# install gnome tweak tool to use to disable mouse acceleration
+apt install gnome-tweak-tool
+
 # TODO: Will add more things when I realise I need them
 

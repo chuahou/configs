@@ -32,5 +32,10 @@ add-apt-repository ppa:atareao/atareao
 apt update
 apt install touchpad-indicator
 
+# install piper
+add-apt-repository ppa:libratbag-piper/piper-libratbag-git
+apt update
+apt install piper
+
 # TODO: Will add more things when I realise I need them
 

@@ -18,11 +18,14 @@ apt update
 # install build tools
 apt install build-essential pkg-config cmake
 
-# install tools
+ install tools
 apt install vim git tmux gitg doxygen doxygen-gui graphviz curl
 
 # install user applications
 apt install libreoffice vlc gimp
+
+# install ibus
+apt install ibus ibus-mozc
 
 # install MS fonts
 apt install ttf-mscorefonts-installer

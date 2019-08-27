@@ -18,7 +18,7 @@ apt update
 # install build tools
 apt install build-essential pkg-config cmake
 
- install tools
+# install tools
 apt install vim git tmux gitg doxygen doxygen-gui graphviz curl
 
 # install user applications

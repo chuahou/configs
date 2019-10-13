@@ -2,8 +2,10 @@
 attilabuti.brainfuck-syntax
 bungcip.better-toml
 cschlosser.doxdocgen
+justusadam.language-haskell
 ms-azuretools.vscode-docker
 ms-python.python
 ms-vscode.cpptools
+nobuhito.printcode
 rust-lang.rust
 vscodevim.vim

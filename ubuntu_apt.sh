@@ -23,6 +23,7 @@ apt install vim git tmux gitg doxygen doxygen-gui graphviz curl checkinstall
 
 # install user applications
 apt install libreoffice vlc gimp
+snap install pdftk
 
 # install ibus
 apt install ibus ibus-mozc

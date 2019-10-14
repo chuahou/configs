@@ -19,7 +19,7 @@ apt update
 apt install build-essential pkg-config cmake
 
 # install tools
-apt install vim git tmux gitg doxygen doxygen-gui graphviz curl checkinstall
+apt install vim git tmux gitg git-lfs doxygen doxygen-gui graphviz curl checkinstall
 
 # install user applications
 apt install libreoffice vlc gimp

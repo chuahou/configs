@@ -1,1 +1,5 @@
+" source default file
+source $VIMRUNTIME/vimrc_example.vim
+
+" add indentation settings
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab smartindent

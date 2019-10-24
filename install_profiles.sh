@@ -16,3 +16,6 @@ cp profiles/profile ~/.profile
 cp profiles/vimrc ~/.vimrc
 cp profiles/bashrc ~/.bashrc
 cp profiles/ghci ~/.ghci
+
+mkdir -p ~/.vim
+mkdir -p ~/.vim/backup

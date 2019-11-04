@@ -41,5 +41,8 @@ add-apt-repository ppa:libratbag-piper/piper-libratbag-git
 apt update
 apt install piper
 
+# install LaTeX
+apt install texlive
+
 # TODO: Will add more things when I realise I need them
 

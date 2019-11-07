@@ -1,5 +1,6 @@
 # basic commands
 alias rm="rm -i"
+alias q="exit"
 
 # fun
 alias please="sudo"
@@ -25,4 +26,10 @@ alias pall="git push origin --all --tags"
 alias pull="git pull"
 alias prebase="git pull --rebase"
 alias pr="git pull --rebase"
+alias log="git log"
+alias l="git log"
+
+# vim
+alias e="vim"
+alias vi="vim"
 

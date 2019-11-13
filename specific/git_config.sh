@@ -9,7 +9,7 @@ then
     exit
 fi
 
-git config --global user.email "human@chuahou.dev"
+git config --global user.email "human+github@chuahou.dev"
 git config --global user.name "Chua Hou"
 git config --global credential.helper cache 900
 git config --global core.editor "vim"

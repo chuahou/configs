@@ -44,8 +44,5 @@ apt install piper
 # install LaTeX
 apt install texlive
 
-# install power saving
-apt install tlp powertop
-
 # TODO: Will add more things when I realise I need them
 

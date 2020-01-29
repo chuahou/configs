@@ -19,6 +19,5 @@ let &colorcolumn=join(range(81,999),",")
 highlight ColorColumn ctermbg=3
 
 " prevent // autoinsertion
-" (see https://stackoverflow.com/questions/4896003/
-" how-do-i-stop-vim-from-auto-creating-comments-on-enter-press
-inoremap <expr> <enter> getline('.') =~ '^\s*//' ? '<enter><esc>S' : '<enter>'
+" http://vim.wikia.com/wiki/Disable_automatic_comment_insertion
+au FileType c,cpp,scala setlocal comments-=:// comments+=f://

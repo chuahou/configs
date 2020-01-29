@@ -15,7 +15,7 @@ fi
 
 # install packages
 apt-get install -y gcc-arm-none-eabi libnewlib-arm-none-eabi srecord mercurial \
-    minicom
+    minicom gcc-arm-linux-gnueabihf
 pip3 install --pre -U pyocd
 
 # enable access to microbit

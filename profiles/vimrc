@@ -17,3 +17,8 @@ set number
 " highlight past 80
 let &colorcolumn=join(range(81,999),",")
 highlight ColorColumn ctermbg=3
+
+" prevent // autoinsertion
+" (see https://stackoverflow.com/questions/4896003/
+" how-do-i-stop-vim-from-auto-creating-comments-on-enter-press
+inoremap <expr> <enter> getline('.') =~ '^\s*//' ? '<enter><esc>S' : '<enter>'

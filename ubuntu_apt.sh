@@ -16,33 +16,33 @@ fi
 apt update
 
 # install build tools
-apt install build-essential pkg-config cmake
+apt install build-essential pkg-config cmake -y
 
 # install tools
-apt install vim git tmux gitg git-lfs doxygen doxygen-gui graphviz curl checkinstall compizconfig-settings-manager
+apt install vim git tmux gitg git-lfs doxygen doxygen-gui graphviz curl checkinstall compizconfig-settings-manager -y
 
 # install user applications
-apt install libreoffice vlc gimp
-snap install pdftk
+apt install libreoffice vlc gimp -y
+snap install pdftk -y
 
 # install ibus
-apt install ibus ibus-mozc
+apt install ibus ibus-mozc -y
 
 # install MS fonts
-apt install ttf-mscorefonts-installer
+apt install ttf-mscorefonts-installer -y
 
 # install touchpad indicator and synaptics
-add-apt-repository ppa:atareao/atareao
-apt update
-apt install touchpad-indicator xserver-xorg-input-synaptics-hwe-18.04
+# add-apt-repository ppa:atareao/atareao
+# apt update
+# apt install touchpad-indicator xserver-xorg-input-synaptics-hwe-18.04
 
 # install piper
-add-apt-repository ppa:libratbag-piper/piper-libratbag-git
-apt update
-apt install piper
+# add-apt-repository ppa:libratbag-piper/piper-libratbag-git
+# apt update
+# apt install piper
 
 # install LaTeX
-apt install texlive
+apt install texlive -y
 
 # TODO: Will add more things when I realise I need them
 

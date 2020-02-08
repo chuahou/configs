@@ -19,4 +19,5 @@
     "editor.renderWhitespace": "all",
     "editor.renderControlCharacters": true,
     "workbench.tree.renderIndentGuides": "always",
+    "editor.rulers": [80]
 }

@@ -35,3 +35,6 @@ alias l="git log"
 alias e="vim"
 alias vi="vim"
 
+# wget
+alias wget="wget -c"
+

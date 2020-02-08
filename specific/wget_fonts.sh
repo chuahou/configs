@@ -15,3 +15,8 @@ fi
 wget https://github.com/google/fonts/raw/master/ofl/inconsolata/Inconsolata-Bold.ttf
 wget https://github.com/google/fonts/raw/master/ofl/inconsolata/Inconsolata-Regular.ttf
 wget https://github.com/google/fonts/raw/master/ofl/prata/Prata-Regular.ttf
+
+# install in ~/.fonts
+mkdir -p ~/.fonts
+mv *.ttf ~/.fonts
+

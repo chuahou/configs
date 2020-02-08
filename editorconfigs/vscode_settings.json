@@ -16,4 +16,7 @@
     "editor.fontSize": 18,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": true,
+    "workbench.tree.renderIndentGuides": "always",
 }

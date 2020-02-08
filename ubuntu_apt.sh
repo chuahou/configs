@@ -19,7 +19,7 @@ apt update
 apt install build-essential pkg-config cmake -y
 
 # install tools
-apt install vim git tmux gitg git-lfs doxygen doxygen-gui graphviz curl checkinstall compizconfig-settings-manager -y
+apt install vim git tmux gitg git-lfs doxygen doxygen-gui graphviz curl checkinstall -y
 
 # install user applications
 apt install libreoffice vlc gimp -y
@@ -42,7 +42,7 @@ apt install ttf-mscorefonts-installer -y
 # apt install piper
 
 # install LaTeX
-apt install texlive -y
+apt install texlive texlive-latex-extra latex-cjk-all -y
 
 # TODO: Will add more things when I realise I need them
 

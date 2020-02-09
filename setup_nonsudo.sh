@@ -22,3 +22,6 @@ specific/install_telegram.sh
 # set touchpad to disable on external
 gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled-on-external-mouse
 
+# load dconf settings
+dconf load / < specific/dconf_settings.dconf
+

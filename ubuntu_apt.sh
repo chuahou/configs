@@ -32,9 +32,9 @@ apt install ibus ibus-mozc -y
 apt install ttf-mscorefonts-installer -y
 
 # install touchpad indicator and synaptics
-# add-apt-repository ppa:atareao/atareao
-# apt update
-# apt install touchpad-indicator xserver-xorg-input-synaptics-hwe-18.04
+add-apt-repository ppa:atareao/atareao
+apt update
+apt install touchpad-indicator xserver-xorg-input-synaptics-hwe-18.04
 
 # install piper
 # add-apt-repository ppa:libratbag-piper/piper-libratbag-git

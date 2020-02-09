@@ -37,7 +37,7 @@ apt install ttf-mscorefonts-installer -y
 # apt install piper
 
 # install LaTeX
-apt install texlive texlive-latex-extra latex-cjk-all -y
+apt install texlive texlive-latex-extra latex-cjk-all texlive-xelatex -y
 
 # install powersaving
 apt install powertop cpufrequtils laptop-mode-tools -y

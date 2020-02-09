@@ -19,6 +19,9 @@ specific/git_config.sh
 specific/wget_fonts.sh
 specific/install_telegram.sh
 
+# install spotify
+snap install spotify
+
 # set touchpad to disable on external
 gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled-on-external-mouse
 

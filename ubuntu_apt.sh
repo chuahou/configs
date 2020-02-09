@@ -39,5 +39,11 @@ apt install ttf-mscorefonts-installer -y
 # install LaTeX
 apt install texlive texlive-latex-extra latex-cjk-all -y
 
+# install powersaving
+apt install powertop cpufrequtils laptop-mode-tools -y
+
+# install GNOME things
+apt install gnome-tweak-tool gnome-shell-extension-dashtodock gnome-shell-extensions y
+
 # TODO: Will add more things when I realise I need them
 

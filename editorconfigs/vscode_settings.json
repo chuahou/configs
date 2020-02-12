@@ -19,5 +19,12 @@
     "editor.renderWhitespace": "all",
     "editor.renderControlCharacters": true,
     "workbench.tree.renderIndentGuides": "always",
-    "editor.rulers": [80]
+    "editor.rulers": [
+        80
+    ],
+    "latex-workshop.intellisense.package.enabled": true,
+    "latex-workshop.latex.external.build.command": "make",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "code-eol.crlfCharacter": "↵↓",
+    "code-eol.newlineCharacter": "↵",
 }

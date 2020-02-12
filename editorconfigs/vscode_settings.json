@@ -1,9 +1,10 @@
 {
     "workbench.colorTheme": "Visual Studio Light",
-    "editor.fontFamily": "'Inconsolata', 'Source Code Pro', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontFamily": "'Fira Code', 'Inconsolata', 'Source Code Pro', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontLigatures": true,
     "terminal.integrated.rendererType": "dom",
     "editor.tabSize": 4,
-    "terminal.integrated.fontSize": 18,
+    "terminal.integrated.fontSize": 16,
     "files.insertFinalNewline": true,
     "doxdocgen.file.versionTag": "",
     "doxdocgen.generic.authorEmail": "",
@@ -13,7 +14,7 @@
     "files.watcherExclude": {
         "**/target/**": true
     },
-    "editor.fontSize": 18,
+    "editor.fontSize": 16,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "editor.renderWhitespace": "all",
@@ -27,4 +28,5 @@
     "latex-workshop.view.pdf.viewer": "tab",
     "code-eol.crlfCharacter": "↵↓",
     "code-eol.newlineCharacter": "↵",
+    "latex-workshop.latex.autoClean.run": "onBuilt",
 }

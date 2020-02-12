@@ -15,10 +15,6 @@ fi
 wget https://github.com/google/fonts/raw/master/ofl/inconsolata/Inconsolata-Bold.ttf
 wget https://github.com/google/fonts/raw/master/ofl/inconsolata/Inconsolata-Regular.ttf
 wget https://github.com/google/fonts/raw/master/ofl/prata/Prata-Regular.ttf
-wget https://github.com/i-tu/Hasklig/releases/download/1.1/Hasklig-1.1.zip
-
-# unzip Hasklig
-unzip Hasklig-1.1.zip
 
 # install in ~/.fonts
 mkdir -p ~/.fonts

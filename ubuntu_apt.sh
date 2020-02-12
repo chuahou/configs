@@ -28,8 +28,8 @@ snap install pdftk -y
 # install ibus
 apt install ibus ibus-mozc -y
 
-# install MS fonts
-apt install ttf-mscorefonts-installer -y
+# install MS fonts and FiraCode
+apt install ttf-mscorefonts-installer fonts-firacode -y
 
 # install piper
 # add-apt-repository ppa:libratbag-piper/piper-libratbag-git

@@ -3,13 +3,17 @@ attilabuti.brainfuck-syntax
 austin.code-gnu-global
 bungcip.better-toml
 cschlosser.doxdocgen
+dan-c-underwood.arm
+eamodio.gitlens
 James-Yu.latex-workshop
 justusadam.language-haskell
 medo64.render-crlf
 ms-azuretools.vscode-docker
 ms-python.python
+ms-vscode.cmake-tools
 ms-vscode.cpptools
 nobuhito.printcode
 rust-lang.rust
+scala-lang.scala
 torn4dom4n.latex-support
 vscodevim.vim

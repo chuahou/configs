@@ -31,7 +31,7 @@ setup: $(DIRS)
 $(DIRS):
 	mkdir -p $@
 
-run:
+run: $(OUT)
 	$(OUT)
 
 clean:

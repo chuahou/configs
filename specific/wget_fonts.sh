@@ -21,3 +21,11 @@ mkdir -p ~/.fonts
 mv *.ttf ~/.fonts
 mv *.otf ~/.fonts
 
+# install Victor Mono
+wget https://rubjo.github.io/victor-mono/VictorMonoAll.zip
+unzip VictorMonoAll.zip -d vm
+cp vm/TTF/*.ttf ~/.fonts
+cp vm/TTF/*.otf ~/.fonts
+rm -rf vm
+rm VictorMonoAll.zip
+

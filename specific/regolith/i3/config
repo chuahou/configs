@@ -85,6 +85,10 @@ bindsym $mod+Ctrl+Shift+Right move workspace to output right
 ## Modify // Next Window Orientation // <Super> Backspace ##
 bindsym $mod+BackSpace split toggle
 
+## CUSTOM : change split ##
+bindsym $mod+v split vertical
+bindsym $mod+c split horizontal
+
 ## Modify // Window Fullscreen Toggle // <Super> f ##
 bindsym $mod+f fullscreen toggle
 
@@ -205,7 +209,7 @@ bindsym $mod+Escape exec gnome-screensaver-command --lock
 bindsym $mod+Shift+s exec systemctl suspend
 
 ## Modify // Settings // <Super> c ##
-bindsym $mod+c exec gnome-control-center
+#bindsym $mod+c exec gnome-control-center # CUSTOM : change to split
 ## Modify // Display Settings // <Super> d ##
 bindsym $mod+d exec gnome-control-center display
 ## Modify // Wifi Settings // <Super> w ##

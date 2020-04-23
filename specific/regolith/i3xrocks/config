@@ -39,6 +39,11 @@ label_color=xresource:i3xrocks.label.color
 #[nm-vpn]
 #interval=5
 
+# NordVPN
+[nordvpn]
+command=~/.config/regolith/i3xrocks/nordvpn.sh
+interval=10
+
 # Wifi
 #
 # Displays the wifi network's name

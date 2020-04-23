@@ -353,7 +353,7 @@ font $i3-wm.font
 set $i3-wm.bar.position top # CUSTOM : bar on top
 set_from_resource $i3-wm.bar.font i3-wm.bar.font "pango:Source Code Pro Medium 13, Material Design Icons 13"
 set_from_resource $i3-wm.bar.separator i3-wm.bar.separator " "
-set_from_resource $i3-wm.bar.trayoutput i3-wm.bar.trayoutput none
+set $i3-wm.bar.trayoutput primary # CUSTOM : show tray 
 set_from_resource $i3-wm.bar.stripworkspacenumbers i3-wm.bar.stripworkspacenumbers yes
 
 # i3xrocks config file. Override this for custom status indicators on the bar.

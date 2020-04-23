@@ -58,8 +58,8 @@ interval=10
 # Keyboard layout
 #
 # Displays current keyboard layout.
-[keyboard_layout]
-interval=persist
+#[keyboard_layout]
+#interval=persist
 
 # Memory
 #

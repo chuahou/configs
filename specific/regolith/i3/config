@@ -37,7 +37,8 @@ floating_modifier $mod
 hide_edge_borders smart
 
 ## Launch // Terminal // <Super> Enter ##
-bindsym $mod+Return exec /usr/bin/x-terminal-emulator
+bindsym $mod+Return exec /usr/bin/gnome-terminal
+# CUSTOM : always default to gnome-terminal
 
 ## Launch // Browser // <Super><Shift> Enter ##
 bindsym $mod+Shift+Return exec gtk-launch $(xdg-settings get default-web-browser)
@@ -217,7 +218,8 @@ bindsym $mod+w exec gnome-control-center wifi
 ## Launch // File Browser // <Super><Shift> n ##
 bindsym $mod+Shift+n exec nautilus
 ## Launch // Notification Viewer // <Super> n ##
-bindsym $mod+n exec /usr/share/rofication/rofication-gui.py
+#bindsym $mod+n exec /usr/share/rofication/rofication-gui.py
+# CUSTOM : disable rofication
 
 # i3-snapshot for load/save current layout
 ## Modify // Save Window Layout // <Super> , ##
@@ -358,7 +360,8 @@ set_from_resource $i3-wm.font i3-wm.font "pango:Source Code Pro Medium 13"
 font $i3-wm.font
 
 set $i3-wm.bar.position top # CUSTOM : bar on top
-set_from_resource $i3-wm.bar.font i3-wm.bar.font "pango:Source Code Pro Medium 13, Material Design Icons 13"
+set $i3-wm.bar.font "pango:Source Code Pro Medium 11, Material Design Icons 11" # CUSTOM : smaller font
+#set_from_resource $i3-wm.bar.font i3-wm.bar.font "pango:Source Code Pro Medium 13, Material Design Icons 13"
 set_from_resource $i3-wm.bar.separator i3-wm.bar.separator " "
 set $i3-wm.bar.trayoutput primary # CUSTOM : show tray 
 set_from_resource $i3-wm.bar.stripworkspacenumbers i3-wm.bar.stripworkspacenumbers yes

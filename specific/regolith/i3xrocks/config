@@ -52,13 +52,13 @@ interval=10
 [wifi2]
 # Replace with your wifi device if you need on next line
 #instance=wlp3s0 
-interval=5
+interval=30
 
 # nettraffic
 #
 # Displays network load
 [nettraffic]
-interval=10
+interval=5
 
 # Keyboard layout
 #

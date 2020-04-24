@@ -51,13 +51,14 @@ interval=10
 # override the "instance" value with the desired device
 [wifi2]
 # Replace with your wifi device if you need on next line
-#instance=wlp3s0 
+#instance=wlp3s0
 interval=30
 
 # nettraffic
 #
 # Displays network load
-[nettraffic]
+[nettraffic-custom]
+command=~/.config/regolith/i3xrocks/net-traffic.sh
 interval=5
 
 # Keyboard layout

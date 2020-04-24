@@ -12,7 +12,7 @@
 
 # Backend to use: "xrender" or "glx".
 # GLX backend is typically much faster but depends on a sane driver.
-backend = "xrender"; # glx has rendering issues for me
+backend = "xrender";
 
 #################################
 #
@@ -221,3 +221,9 @@ wintypes:
         fade = false;
     }
 };
+
+# Transparency for VScode and rofi
+opacity-rule = [
+    "95:class_g *?= 'code'",
+    "95:class_g *?= 'rofi'"
+];

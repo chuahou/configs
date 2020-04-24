@@ -264,8 +264,10 @@ mode "Resize Mode" {
         ## Resize // Window Gaps // + - ##
         bindsym minus gaps inner current minus 6
         bindsym plus gaps inner current plus 6
-        bindsym Shift+minus gaps inner current minus 12
-        bindsym Shift+plus gaps inner current plus 12
+
+        # CUSTOM : make Shift modify outer gaps instead
+        bindsym Shift+minus gaps outer current minus 12
+        bindsym Shift+plus gaps outer current plus 12
 
         ## Resize // Exit Resize Mode // Escape or Enter ## 
         bindsym Return mode "default"

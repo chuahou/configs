@@ -38,3 +38,5 @@ alias vi="vim"
 # wget
 alias wget="wget -c"
 
+# enable aliases in sudo
+alias sudo="sudo "

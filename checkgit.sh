@@ -5,7 +5,7 @@
 for dir in `find ${PWD}/.. -mindepth 1 -maxdepth 1 -type d`; do
     cd "$dir"
     printstatus=0
-    gitstatus=$(git status)
+    gitstatus=$(git status 2> /dev/null)
 
     # if fatal, skip
     if [ $? -ne 0 ]; then

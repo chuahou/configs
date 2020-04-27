@@ -19,7 +19,7 @@ apt update
 apt install build-essential pkg-config cmake -y
 
 # install tools
-apt install vim meld git tmux gitg git-lfs doxygen doxygen-gui graphviz curl checkinstall -y
+apt install vim meld git gitg git-lfs doxygen doxygen-gui graphviz curl -y
 
 # install user applications
 apt install libreoffice vlc gimp -y
@@ -28,13 +28,8 @@ snap install pdftk -y
 # install ibus
 apt install ibus ibus-mozc -y
 
-# install MS fonts and FiraCode
-apt install ttf-mscorefonts-installer fonts-firacode -y
-
-# install piper
-# add-apt-repository ppa:libratbag-piper/piper-libratbag-git
-# apt update
-# apt install piper
+# install MS fonts
+apt install ttf-mscorefonts-installer -y
 
 # install LaTeX
 apt install texlive texlive-latex-extra latex-cjk-all texlive-xelatex texlive-science -y
@@ -45,8 +40,4 @@ apt install powertop cpufrequtils laptop-mode-tools -y
 # install GNOME things
 apt install gnome-tweak-tool gnome-shell-extension-dashtodock gnome-shell-extensions y
 
-# install prolog
-apt install swi-prolog-nox
-
 # TODO: Will add more things when I realise I need them
-

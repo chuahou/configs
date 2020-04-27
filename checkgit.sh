@@ -35,5 +35,13 @@ for dir in `find ${PWD}/.. -mindepth 1 -maxdepth 1 -type d`; do
         pwd
         git status
         echo
+
+		# set that we have printed something
+		printed="yes"
     fi
 done
+
+if [ -z $printed ]; then
+	echo "All repos committed and pushed"
+fi
+

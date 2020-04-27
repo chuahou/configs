@@ -42,4 +42,7 @@
     "workbench.colorTheme": "Visual Studio Dark Theme",
     "files.insertFinalNewline": true,
     "terminal.integrated.fontSize": 28,
+	"terminal.integrated.env.linux": {
+		"visual_studio": "true"
+	}
 }

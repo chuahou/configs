@@ -18,6 +18,7 @@ fi
 specific/git_config.sh
 specific/wget_fonts.sh
 specific/install_telegram.sh
+specific/install_libinputgestures.sh
 
 # install spotify
 snap install spotify

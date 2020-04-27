@@ -15,6 +15,7 @@ fi
 ./install_profiles.sh
 
 # run specific scripts
+specific/install_regolithconfig.sh
 specific/git_config.sh
 specific/wget_fonts.sh
 specific/install_telegram.sh

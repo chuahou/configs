@@ -17,4 +17,3 @@ fi
 # specific scripts
 specific/install_fuckit.sh
 specific/install_nordvpn.sh
-

@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Runs all initial Ubuntu setup that does not require sudo.
+# Installs Regolith config files.
 #
 # DO NOT RUN AS ROOT
 
@@ -13,4 +13,4 @@ fi
 
 # copy all configs from here
 mkdir -p ~/.config/regolith
-cp -r ./* ~/.config/regolith/
+cp -r regolith/* ~/.config/regolith/

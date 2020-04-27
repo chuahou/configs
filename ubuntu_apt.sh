@@ -15,6 +15,10 @@ fi
 # update package lists
 apt update
 
+# install regolith
+add-apt-repository ppa:regolith-linux/release -y
+apt install regolith-desktop i3xrocks-net-traffic i3xrocks-cpu-usage i3xrocks-time -y
+
 # install build tools
 apt install build-essential pkg-config cmake -y
 
@@ -38,6 +42,6 @@ apt install texlive texlive-latex-extra latex-cjk-all texlive-xelatex texlive-sc
 apt install powertop cpufrequtils laptop-mode-tools -y
 
 # install GNOME things
-apt install gnome-tweak-tool gnome-shell-extension-dashtodock gnome-shell-extensions -y
+apt install gnome-tweak-tool -y
 
 # TODO: Will add more things when I realise I need them

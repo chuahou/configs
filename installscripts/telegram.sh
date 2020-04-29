@@ -5,7 +5,7 @@
 # Do NOT run as ROOT.
 
 # check not root
-./check_root.sh user || exit 1
+../scripts/check_root.sh user || exit 1
 
 # download archive
 wget https://telegram.org/dl/desktop/linux -O t.tar.xz

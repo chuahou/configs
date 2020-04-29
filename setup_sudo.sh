@@ -7,9 +7,5 @@
 # check for root
 ./check_root.sh root || exit 1
 
-# apt
-./ubuntu_apt.sh
-
-# specific scripts
-specific/install_fuckit.sh
-specific/install_nordvpn.sh
+./apt-install.sh
+installscripts/fuckit.sh

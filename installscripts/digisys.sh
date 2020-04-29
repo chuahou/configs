@@ -7,7 +7,7 @@
 # Run as ROOT.
 
 # check for root
-./check_root.sh root || exit 1
+../scripts/check_root.sh root || exit 1
 
 # install packages
 apt-get install -y gcc-arm-none-eabi libnewlib-arm-none-eabi srecord mercurial \

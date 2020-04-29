@@ -62,7 +62,7 @@ if which "$DCONF" > /dev/null 2>&1; then
 
 		# update profile values with theme options
 		dset visible-name "'$PROFILE_NAME'"
-		dset palette "['#4a3637', '#d17b49', '#7b8748', '#af865a', '#535c5c', '#786869', '#79805c', '#c0b18b', '#4a3637', '#d17b49', '#7b8748', '#af865a', '#535c5c', '#786869', '#79805c', '#c0b18b']"
+		dset palette "['#4a3637', '#d17b49', '#7b8748', '#af865a', '#839191', '#786869', '#79805c', '#c0b18b', '#4a3637', '#d17b49', '#7b8748', '#af865a', '#839191', '#786869', '#79805c', '#c0b18b']"
 		dset background-color "'#171916'"
 		dset foreground-color "'#bea66a'"
 		dset bold-color "'#bea66a'"

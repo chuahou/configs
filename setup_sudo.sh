@@ -2,14 +2,10 @@
 #
 # Runs all initial Ubuntu setup that requires sudo.
 #
-# Run as root.
+# Run as ROOT.
 
 # check for root
-if [ "$EUID" -ne 0 ]
-then
-    echo "Run as ROOT."
-    exit
-fi
+./check_root.sh root || exit 1
 
 # apt
 ./ubuntu_apt.sh

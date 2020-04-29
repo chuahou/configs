@@ -2,14 +2,10 @@
 #
 # Copies profile, bash_aliases etc to ~
 #
-# DO NOT RUN AS ROOT
+# Do NOT run as ROOT.
 
 # check for root
-if [ "$EUID" -eq 0 ]
-then
-    echo "Do not run as ROOT."
-    exit
-fi
+scripts/check_root.sh user || exit 1
 
 # copy home dotfiles
 cp profiles/bash_aliases ~/.bash_aliases

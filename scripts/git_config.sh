@@ -1,13 +1,11 @@
 #!/bin/bash
 #
 # Configures git settings
+#
+# Do NOT run as ROOT.
 
-# check for root
-if [ "$EUID" -eq 0 ]
-then
-    echo "Do not run as ROOT."
-    exit
-fi
+# check not root
+./check_root.sh user || exit 1
 
 git config --global user.email "human+github@chuahou.dev"
 git config --global user.name "Chua Hou"

@@ -5,11 +5,7 @@
 # Run as ROOT.
 
 # check for root
-if [ "$EUID" -ne 0 ]
-then
-    echo "Run as ROOT."
-    exit
-fi
+./check_root.sh root || exit 1
 
 wget https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb
 dpkg -i nordvpn-release_1.0.0_all.deb

@@ -3,14 +3,10 @@
 # Uses `apt` to install the common packages I will need on every new Ubuntu
 # installation. I started working on this late, so it will be incomplete.
 #
-# Run as root.
+# Run as ROOT.
 
 # check for root
-if [ "$EUID" -ne 0 ]
-then
-    echo "Run as ROOT."
-    exit
-fi
+scripts/check_root.sh root || exit 1
 
 # update package lists
 apt update

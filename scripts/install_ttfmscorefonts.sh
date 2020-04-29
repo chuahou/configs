@@ -2,14 +2,10 @@
 #
 # Installs MS core fonts with automatic acceptance of EULA.
 #
-# RUN AS ROOT.
+# Run as ROOT.
 
 # check for root
-if [ "$EUID" -ne 0 ]
-then
-    echo "Run as ROOT."
-    exit
-fi
+./check_root.sh root || exit 1
 
 echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | debconf-set-selections
 apt-get install ttf-mscorefonts-installer

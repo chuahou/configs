@@ -2,14 +2,10 @@
 #
 # Downloads the inconsolata font from the Google Fonts repo on GitHub.
 #
-# Do NOT run as root.
+# Do NOT run as ROOT.
 
-# check for root
-if [ "$EUID" -eq 0 ]
-then
-    echo "Do not run as ROOT."
-    exit
-fi
+# check not root
+./check_root.sh user || exit 1
 
 # get files
 wget https://github.com/google/fonts/raw/master/ofl/inconsolata/Inconsolata-Bold.ttf

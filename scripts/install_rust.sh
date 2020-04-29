@@ -2,14 +2,10 @@
 #
 # Installs rust.
 #
-# DO NOT RUN AS ROOT.
+# Do NOT run as ROOT.
 
-# check for root
-if [ "$EUID" -eq 0 ]
-then
-    echo "Do not run as ROOT."
-    exit
-fi
+# check not root
+./check_root.sh user || exit 1
 
 # install rust
 curl https://sh.rustup.rs -sSf | sh

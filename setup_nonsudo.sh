@@ -2,14 +2,10 @@
 #
 # Runs all initial Ubuntu setup that does not require sudo.
 #
-# DO NOT RUN AS ROOT
+# Do NOT run as ROOT.
 
 # check for root
-if [ "$EUID" -eq 0 ]
-then
-    echo "Do not run as ROOT."
-    exit
-fi
+scripts/check_root.sh user || exit 1
 
 # install dotfiles
 ./install_profiles.sh

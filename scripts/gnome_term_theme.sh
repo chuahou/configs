@@ -2,8 +2,12 @@
 # Base16 - Gnome Terminal color scheme install script
 #
 # Exported from terminal.sexy
+# Modified by Chua Hou
 #
-# Tweaked by Chua Hou
+# Do NOT run as ROOT.
+
+# check not root
+./check_root.sh user || exit 1
 
 [[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="s3r0-mod-ch"
 [[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="s3r0-mod-ch"

@@ -5,11 +5,7 @@
 # Run as ROOT.
 
 # check for root
-if [ "$EUID" -ne 0 ]
-then
-    echo "Run as ROOT."
-    exit
-fi
+./check_root.sh root || exit 1
 
 # install Python
 apt install python3-dev python3-pip python3-setuptools

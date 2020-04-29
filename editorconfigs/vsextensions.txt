@@ -7,7 +7,6 @@ eamodio.gitlens
 James-Yu.latex-workshop
 justusadam.language-haskell
 kevinkyang.auto-comment-blocks
-maptz.regionfolder
 medo64.render-crlf
 ms-python.python
 ms-vscode.cpptools

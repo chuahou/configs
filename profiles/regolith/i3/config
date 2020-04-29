@@ -286,7 +286,7 @@ default_border pixel $i3-wm.window.border.size
 default_floating_border pixel $i3-wm.floatingwindow.border.size
 
 # Specify the distance between windows in pixels. (i3-gaps)
-set $i3-wm.gaps.inner.size 12 # CUSTOM : larger default gaps
+set_from_resource $i3-wm.gaps.inner.size i3-wm.gaps.inner.size 12
 set_from_resource $i3-wm.gaps.outer.size i3-wm.gaps.outer.size 0
 gaps inner $i3-wm.gaps.inner.size
 gaps outer $i3-wm.gaps.outer.size
@@ -361,7 +361,7 @@ set_from_resource $i3-wm.bar.workspace.urgent.text.color i3-wm.bar.workspace.urg
 set_from_resource $i3-wm.font i3-wm.font "pango:Source Code Pro Medium 13"
 font $i3-wm.font
 
-set $i3-wm.bar.position top # CUSTOM : bar on top
+set_from_resource $i3-wm.bar.position i3-wm.bar.position top
 set $i3-wm.bar.font "pango:Source Code Pro Medium 11, Material Design Icons 11" # CUSTOM : smaller font
 #set_from_resource $i3-wm.bar.font i3-wm.bar.font "pango:Source Code Pro Medium 13, Material Design Icons 13"
 set_from_resource $i3-wm.bar.separator i3-wm.bar.separator " "

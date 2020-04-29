@@ -33,3 +33,4 @@ texlive-xetex
 cpufrequtils
 laptop-mode-tools
 powertop
+debhelper

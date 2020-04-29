@@ -8,6 +8,6 @@
 scripts/check_root.sh root || exit 1
 
 ./apt-install.sh
-installscripts/fuckit.sh
+cd installscripts && ./fuckit.sh
 apt purge xserver-xorg-input-synaptics -y
 	# synaptics doesn't play nicely with disable touchpad on external mouse

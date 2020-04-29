@@ -24,6 +24,9 @@ cd scripts
 # get fonts
 ./wget_fonts.sh
 
+# make folder for vim
+mkdir -p ~/.vim
+
 # set touchpad to disable on external
 gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled-on-external-mouse
 

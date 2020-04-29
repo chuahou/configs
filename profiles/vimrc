@@ -24,3 +24,6 @@ au FileType c,cpp,scala setlocal comments-=:// comments+=f://
 
 " use desert colorscheme
 colorscheme desert
+
+" adjust search highlighting color
+hi Search ctermbg=3 ctermfg=0

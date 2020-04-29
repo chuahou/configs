@@ -8,22 +8,25 @@
 scripts/check_root.sh user || exit 1
 
 # misc installs
-installscripts/rust.sh
-installscripts/spotify.sh
-installscripts/telegram.sh
-
-# install dotfiles
-./install_profiles.sh
+cd installscripts
+./rust.sh
+./spotify.sh
+./telegram.sh
+cd ..
 
 # configure git
-scripts/git_config.sh
+cd scripts
+./git_config.sh
 
 # configure terminal
-scripts/gnome_term_theme.sh
+./gnome_term_theme.sh
 
 # get fonts
-scritps/wget_fonts.sh
+./wget_fonts.sh
 
 # set touchpad to disable on external
 gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled-on-external-mouse
+
+# set mouse acceleration to flat
+gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
 

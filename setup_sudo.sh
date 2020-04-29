@@ -5,7 +5,9 @@
 # Run as ROOT.
 
 # check for root
-./check_root.sh root || exit 1
+scripts/check_root.sh root || exit 1
 
 ./apt-install.sh
 installscripts/fuckit.sh
+apt purge xserver-xorg-input-synaptics -y
+	# synaptics doesn't play nicely with disable touchpad on external mouse

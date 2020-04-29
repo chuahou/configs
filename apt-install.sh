@@ -16,5 +16,8 @@ done
 # update package lists
 apt-get update
 
+# upgrade first
+apt-get upgrade -y
+
 # install everything from apt-packages
 xargs apt-get install -y < apt-packages

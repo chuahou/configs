@@ -19,6 +19,7 @@ specific/install_regolithconfig.sh
 specific/git_config.sh
 specific/wget_fonts.sh
 specific/install_telegram.sh
+specific/s3r0-modified.sh
 
 # install spotify
 snap install spotify

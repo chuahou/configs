@@ -1,4 +1,3 @@
-Adrien.VisualStudioDarkTheme
 bungcip.better-toml
 cschlosser.doxdocgen
 dan-c-underwood.arm

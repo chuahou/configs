@@ -69,5 +69,5 @@
 	"window.menuBarVisibility": "toggle",
 
 	// theming
-	"workbench.colorTheme": "Visual Studio Dark Theme",
+	"workbench.colorTheme": "Visual Studio Dark",
 }

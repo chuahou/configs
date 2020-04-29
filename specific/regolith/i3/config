@@ -237,42 +237,42 @@ for_window [class="Gnome-control-center"] floating enable
 
 ## Resize // Enter Resize Mode // <Super> r ##
 mode "Resize Mode" {
-        # These bindings trigger as soon as you enter the resize mode
+	# These bindings trigger as soon as you enter the resize mode
 
-        ## Resize // Resize Window // ↑ ↓ ← → ##
-        bindsym Left resize shrink width 6 px or 6 ppt
-        bindsym Down resize grow height 6 px or 6 ppt
-        bindsym Up resize shrink height 6 px or 6 ppt
-        bindsym Right resize grow width 6 px or 6 ppt
+	## Resize // Resize Window // ↑ ↓ ← → ##
+	bindsym Left resize shrink width 6 px or 6 ppt
+	bindsym Down resize grow height 6 px or 6 ppt
+	bindsym Up resize shrink height 6 px or 6 ppt
+	bindsym Right resize grow width 6 px or 6 ppt
 
-        bindsym Shift+Left resize shrink width 12 px or 12 ppt
-        bindsym Shift+Down resize grow height 12 px or 12 ppt
-        bindsym Shift+Up resize shrink height 12 px or 12 ppt
-        bindsym Shift+Right resize grow width 12 px or 12 ppt
+	bindsym Shift+Left resize shrink width 12 px or 12 ppt
+	bindsym Shift+Down resize grow height 12 px or 12 ppt
+	bindsym Shift+Up resize shrink height 12 px or 12 ppt
+	bindsym Shift+Right resize grow width 12 px or 12 ppt
 
-        ## Resize // Resize Window // k j h l ##
-        bindsym h resize shrink width 6 px or 6 ppt
-        bindsym k resize grow height 6 px or 6 ppt
-        bindsym j resize shrink height 6 px or 6 ppt
-        bindsym l resize grow width 6 px or 6 ppt
+	## Resize // Resize Window // k j h l ##
+	bindsym h resize shrink width 6 px or 6 ppt
+	bindsym k resize grow height 6 px or 6 ppt
+	bindsym j resize shrink height 6 px or 6 ppt
+	bindsym l resize grow width 6 px or 6 ppt
 
-        bindsym Shift+h resize shrink width 12 px or 12 ppt
-        bindsym Shift+k resize grow height 12 px or 12 ppt
-        bindsym Shift+j resize shrink height 12 px or 12 ppt
-        bindsym Shift+l resize grow width 12 px or 12 ppt
+	bindsym Shift+h resize shrink width 12 px or 12 ppt
+	bindsym Shift+k resize grow height 12 px or 12 ppt
+	bindsym Shift+j resize shrink height 12 px or 12 ppt
+	bindsym Shift+l resize grow width 12 px or 12 ppt
 
-        ## Resize // Window Gaps // + - ##
-        bindsym minus gaps inner current minus 6
-        bindsym plus gaps inner current plus 6
+	## Resize // Window Gaps // + - ##
+	bindsym minus gaps inner current minus 6
+	bindsym plus gaps inner current plus 6
 
-        # CUSTOM : make Shift modify outer gaps instead
-        bindsym Shift+minus gaps outer current minus 12
-        bindsym Shift+plus gaps outer current plus 12
+	# CUSTOM : make Shift modify outer gaps instead
+	bindsym Shift+minus gaps outer current minus 12
+	bindsym Shift+plus gaps outer current plus 12
 
-        ## Resize // Exit Resize Mode // Escape or Enter ## 
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
+	## Resize // Exit Resize Mode // Escape or Enter ## 
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+	bindsym $mod+r mode "default"
 }
 bindsym $mod+r mode "Resize Mode"
 
@@ -373,25 +373,25 @@ set_from_resource $i3-wm.i3xrocks.config i3-wm.i3xrocks.config "/home/sgepk/.con
 
 # The bar configuration
 bar {
-  position $i3-wm.bar.position
-  font $i3-wm.bar.font
-  separator_symbol $i3-wm.bar.separator
-  status_command i3xrocks -c $i3-wm.i3xrocks.config
-  tray_output $i3-wm.bar.trayoutput
-  strip_workspace_numbers $i3-wm.bar.stripworkspacenumbers
-  height 30
+	position $i3-wm.bar.position
+	font $i3-wm.bar.font
+	separator_symbol $i3-wm.bar.separator
+	status_command i3xrocks -c $i3-wm.i3xrocks.config # run custom compiled i3xrocks
+	tray_output $i3-wm.bar.trayoutput
+	strip_workspace_numbers $i3-wm.bar.stripworkspacenumbers
+	height 30
 
-  colors {
-      background $i3-wm.bar.background.color
-      statusline $i3-wm.bar.statusline.color
-      separator  $i3-wm.bar.separator.color
+	colors {
+		background $i3-wm.bar.background.color
+		statusline $i3-wm.bar.statusline.color
+		separator  $i3-wm.bar.separator.color
 
-#                        BORDER  BACKGROUND TEXT
-      focused_workspace  $i3-wm.bar.workspace.focused.border.color      $i3-wm.bar.workspace.focused.background.color   $i3-wm.bar.workspace.focused.text.color
-      active_workspace   $i3-wm.bar.workspace.active.border.color       $i3-wm.bar.workspace.active.background.color    $i3-wm.bar.workspace.active.text.color
-      inactive_workspace $i3-wm.bar.workspace.inactive.border.color     $i3-wm.bar.workspace.inactive.background.color  $i3-wm.bar.workspace.inactive.text.color
-      urgent_workspace   $i3-wm.bar.workspace.urgent.border.color       $i3-wm.bar.workspace.urgent.background.color    $i3-wm.bar.workspace.urgent.text.color
-  }
+#                       BORDER  BACKGROUND TEXT
+		focused_workspace  $i3-wm.bar.workspace.focused.border.color      $i3-wm.bar.workspace.focused.background.color   $i3-wm.bar.workspace.focused.text.color
+		active_workspace   $i3-wm.bar.workspace.active.border.color       $i3-wm.bar.workspace.active.background.color    $i3-wm.bar.workspace.active.text.color
+		inactive_workspace $i3-wm.bar.workspace.inactive.border.color     $i3-wm.bar.workspace.inactive.background.color  $i3-wm.bar.workspace.inactive.text.color
+		urgent_workspace   $i3-wm.bar.workspace.urgent.border.color       $i3-wm.bar.workspace.urgent.background.color    $i3-wm.bar.workspace.urgent.text.color
+	}
 }
 
 # The following exec calls run programs in the background when i3 starts.

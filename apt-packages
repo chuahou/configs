@@ -34,3 +34,6 @@ cpufrequtils
 laptop-mode-tools
 powertop
 debhelper
+snapd
+nordvpn
+dunst

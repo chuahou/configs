@@ -2,10 +2,10 @@
 #
 # Installs rust.
 #
-# Do NOT run as ROOT.
+# Run as ROOT.
 
 # check not root
-../scripts/check_root.sh user || exit 1
+../scripts/check_root.sh root || exit 1
 
 # install Spotify
 snap install spotify

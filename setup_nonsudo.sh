@@ -10,7 +10,6 @@ scripts/check_root.sh user || exit 1
 # misc installs
 cd installscripts
 ./rust.sh
-./spotify.sh
 ./telegram.sh
 cd ..
 

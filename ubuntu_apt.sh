@@ -17,7 +17,7 @@ apt update
 
 # install regolith
 add-apt-repository ppa:regolith-linux/release -y
-apt install regolith-desktop i3xrocks-net-traffic i3xrocks-cpu-usage i3xrocks-time i3xrocks-wifi -y
+apt install regolith-desktop i3xrocks-net-traffic i3xrocks-cpu-usage i3xrocks-time i3xrocks-wifi i3xrocks-battery -y
 
 # install build tools
 apt install build-essential pkg-config cmake -y

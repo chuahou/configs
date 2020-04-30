@@ -23,9 +23,6 @@ cd scripts
 # get fonts
 ./wget_fonts.sh
 
-# make folder for vim
-mkdir -p ~/.vim/backup
-
 # setup vscode
 cd ..
 cd editorconfigs

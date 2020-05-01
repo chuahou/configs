@@ -26,8 +26,7 @@ cd scripts
 # setup vscode
 cd ..
 cd editorconfigs
-make install
-cd ..
+./vsextensions.sh install vsextensions.txt
 
 # set touchpad to disable on external
 gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled-on-external-mouse

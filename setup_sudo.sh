@@ -11,5 +11,6 @@ scripts/check_root.sh root || exit 1
 cd installscripts
 ./fuckit.sh
 ./spotify.sh
+./ttfmscorefonts.sh
 apt purge xserver-xorg-input-synaptics -y
 	# synaptics doesn't play nicely with disable touchpad on external mouse

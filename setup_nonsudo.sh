@@ -23,6 +23,9 @@ cd scripts
 # get fonts
 ./wget_fonts.sh
 
+# get dynamic-wallpaper
+./dynamic_wallpaper.sh
+
 # setup vscode
 cd ..
 cd editorconfigs

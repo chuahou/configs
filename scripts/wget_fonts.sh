@@ -11,7 +11,7 @@
 wget https://github.com/google/fonts/raw/master/ofl/inconsolata/Inconsolata-Bold.ttf
 wget https://github.com/google/fonts/raw/master/ofl/inconsolata/Inconsolata-Regular.ttf
 wget https://github.com/google/fonts/raw/master/ofl/prata/Prata-Regular.ttf
-wget https://github.com/chuahou/badfont/releases/download/v1.0.1/badfont.ttf
+wget https://github.com/chuahou/badfont/releases/download/v1.1.0/badfont.ttf
 
 # install in ~/.fonts
 mkdir -p ~/.fonts

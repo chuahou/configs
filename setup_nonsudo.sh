@@ -17,9 +17,6 @@ cd ..
 cd scripts
 ./git_config.sh
 
-# configure terminal
-./gnome_term_theme.sh
-
 # get fonts
 ./wget_fonts.sh
 

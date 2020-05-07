@@ -20,6 +20,7 @@ gitg
 gnome-terminal
 gnome-tweak-tool
 graphviz
+haskell-platform
 i3xrocks-battery
 i3xrocks-cpu-usage
 i3xrocks-memory
@@ -34,10 +35,12 @@ libnotify-bin
 libreoffice
 meld
 mozc-utils-gui
+neovim
 nordvpn
 pkg-config
 potrace
 regolith-desktop
+scala
 scala
 snapd
 texlive

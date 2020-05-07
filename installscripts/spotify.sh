@@ -1,10 +1,10 @@
 #!/bin/bash
 #
-# Installs rust.
+# Installs Spotify.
 #
 # Run as ROOT.
 
-# check not root
+# check for root
 ../scripts/check_root.sh root || exit 1
 
 # install Spotify

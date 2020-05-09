@@ -1,0 +1,113 @@
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage{parskip}
+
+% algorithms
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+
+% maths essentials
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm} % bold math
+
+% optionals
+\usepackage{xcolor} % color stuff e.g. colorbox
+
+% matrices and calculus
+\newcommand{\br}[1]{\bm{\mathrm{#1}}} % shortcut for matrices
+\newcommand{\numberthis}{\addtocounter{equation}{1}\tag{\theequation}}
+\newcommand{\reason}[1]{\tag*{\{ #1 \}}} % shortcut for tagging reasoning
+\newcommand{\trans}{^\mathrm{T}} % shortcut for transpose
+\newcommand{\norm}[1]{\lVert#1\rVert} % ||v||
+\renewcommand{\d}{\mathrm{d}} % d for derivatives / integral
+\newcommand{\dydx}[2]{\frac{\d #1}{\d #2}} % derivative
+\newcommand{\dydxn}[3]{\frac{\d^{#1} #2}{\d #3^{#1}}} % higher order derivative
+\newcommand{\pydx}[2]{\frac{\partial #1}{\partial #2}} % partial derivative
+
+% todo
+\newcommand{\todo}{\colorbox{red!80}{\textbf{Was unable to solve}}}
+
+% allow align*s to be broken over lines
+\allowdisplaybreaks
+
+\title{\LaTeX template}
+\author{Chua Hou}
+\date{}
+\begin{document}
+
+\maketitle
+
+\section*{Question 5.1}
+
+\subsection*{Part (a)}
+
+Using the partial chain rule, we note that (setting
+$\bm{g}(\bm{y}) = \bm{\mathrm{M}y}$):
+\begin{align*}
+	\dydx{f(\br{M}\bm{y})}{\bm{y}} (\bm{y_n}) &=
+	\dydx{(f \circ \bm{g})}{\bm{y}} (\bm{y_n}) \\
+	&= \br{J}(\bm{g})\trans
+		\left(\dydx{f}{\bm{x}} \circ \bm{g}\right) (\bm{y_n})
+		\reason{partial chain rule} \\
+	&= \br{MJ}(\bm{y})\trans
+		\dydx{f}{\bm{x}}(\bm{\mathrm{M}y}) \\
+	&= \br{MI} \dydx{f}{\bm{x}}(\bm{x_n}) \\
+	&= \br{M} \dydx{f}{\bm{x}}(\bm{x_n}). \numberthis \label{eqn1}
+\end{align*}
+Hence $\bm{x_n}$ can be computed directly using the preconditioned iteration.
+
+Gradient descent for $\operatorname{arg\,min}_{\bm{y}} f(\bm{\mathrm{M}y})$
+yields
+\begin{align*}
+	&&\bm{y_{n+1}} &= \bm{y_n} -
+		\alpha_n \dydx{f(\br{M}\bm{y})}{\bm{x}} (\bm{y_n}) \\
+	&\Rightarrow&\br{M}^{-1} \bm{x_{n+1}} &= \br{M}^{-1} \bm{x_n} -
+		\alpha_n \br{M} \dydx{f}{\bm{x}} (\bm{x_n})
+		\reason{substituting $\bm{x_n} = \br{M} \bm{y_n}$
+			and \eqref{eqn1}} \\
+	&\Rightarrow&\bm{x_{n+1}} &= \bm{x_n} -
+		\alpha_n \br{M}^2 \dydx{f}{\bm{x}} (\bm{x_n})
+		\reason{multiplying through by $\br{M}$}
+\end{align*}
+which proves ($*$).
+
+\section*{Question 2}
+
+We modify BFS to check if there are edges between vertices of depths of the
+same parity. Since $G$ is a directed graph that is strongly connected, we are
+certain that $G$ contains a cycle. Hence we only need to check that at least one
+edge between vertices of the same depth parity exist to know that an odd cycle
+exists.
+
+\begin{algorithm}
+\caption{Question 2}
+\begin{algorithmic}[1]
+	\Procedure{OddCycle}{$V, E$}
+	\State $s \gets V[0]; d[s] \gets 0$
+	\Comment{Arbitrary source}
+	\For{$u \in V \setminus{\{s\}}$}
+		$d[u] \gets \infty$
+	\EndFor
+	\State $Q \gets \varnothing$; \Call{Enqueue}{$Q, s$}
+	\Comment{Enqueue only source}
+	\While{$Q$ is not empty}
+		\State $u \gets \Call{Dequeue}{Q}$
+		\For{$v \in \textit{Adj}[u]$}
+			\If{$d[v] = \infty$}
+				\Comment{New node, set distance and enqueue}
+				\State $d[v] \gets d[u] + 1$
+				\State \Call{Enqueue}{$Q, v$}
+			\ElsIf{$d[u] \equiv d[v] \pmod{2}$}
+				\Comment{Visited node, check parity of depths}
+				\State \Return \textsc{True}
+			\EndIf
+		\EndFor
+	\EndWhile
+	\State \Return \textsc{False}
+	\Comment{Odd cycle not found}
+	\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+\end{document}

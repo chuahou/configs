@@ -15,3 +15,4 @@ if $(command -v nvim > /dev/null); then
 else
 	git config --global core.editor vim # use nvim if present
 fi
+git config --global commit.template ~/git_message.txt

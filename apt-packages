@@ -41,6 +41,7 @@ pdf2svg
 pkg-config
 potrace
 regolith-desktop
+ruby-full
 snapd
 texlive
 texlive-fonts-extra

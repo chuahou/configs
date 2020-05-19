@@ -11,6 +11,7 @@ scripts/check_root.sh user || exit 1
 cd installscripts
 ./rust.sh
 ./telegram.sh
+./ohmyzsh.sh
 cd ..
 
 # configure git
@@ -33,4 +34,3 @@ gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled-on-ext
 
 # set mouse acceleration to flat
 gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
-

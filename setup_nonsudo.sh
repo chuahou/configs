@@ -12,6 +12,7 @@ cd installscripts
 ./rust.sh
 ./telegram.sh
 ./ohmyzsh.sh
+./nvm.sh
 cd ..
 
 # configure git

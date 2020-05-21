@@ -6,7 +6,7 @@
 # Run as ROOT.
 
 # check for root
-scripts/check_root.sh root || exit 1
+../check_root.sh root || exit 1
 
 # backup /etc/default/grub
 if [ ! -e /etc/default/grub.backup ]; then

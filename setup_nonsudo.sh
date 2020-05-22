@@ -25,11 +25,6 @@ cd scripts
 # get dynamic-wallpaper
 ./dynamic_wallpaper.sh
 
-# setup vscode
-cd ..
-cd editorconfigs
-./vsextensions.sh install vsextensions.txt
-
 # set touchpad to disable on external
 gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled-on-external-mouse
 

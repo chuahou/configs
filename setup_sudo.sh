@@ -13,7 +13,6 @@ cd installscripts
 ./spotify.sh
 ./ttfmscorefonts.sh
 ./authy.sh
-./sbt.sh
 apt purge xserver-xorg-input-synaptics -y
 	# synaptics doesn't play nicely with disable touchpad on external mouse
 cd ../scripts

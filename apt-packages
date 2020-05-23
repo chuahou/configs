@@ -32,14 +32,15 @@ neovim
 nordvpn
 pdf2svg
 pkg-config
-regolith-look-cahuella
 regolith-desktop
+regolith-look-cahuella
 snapd
 texlive
 texlive-fonts-extra
 texlive-latex-extra
 texlive-science
 texlive-xetex
+tree
 vim
 vlc
 zsh

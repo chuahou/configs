@@ -1,18 +1,34 @@
+% SPDX-License-Identifier: ???
+% Copyright (c) 2020 Chua Hou
+
 \documentclass[11pt]{article}
 \usepackage{fullpage}
 \usepackage{parskip}
 
-% algorithms
-\usepackage{algorithm}
-\usepackage[noend]{algpseudocode}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                 PACKAGES                                 %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % maths essentials
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{bm} % bold math
 
+% algorithms
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+
+% Fitch-style proofs
+\usepackage{logicproof}
+
 % optionals
 \usepackage{xcolor} % color stuff e.g. colorbox
+\usepackage{multicol} % mutliple columns for lists
+\usepackage{inconsolata} % font for code
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                SHORTCUTS                                 %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % matrices and calculus
 \newcommand{\br}[1]{\bm{\mathrm{#1}}} % shortcut for matrices
@@ -25,15 +41,35 @@
 \newcommand{\dydxn}[3]{\frac{\d^{#1} #2}{\d #3^{#1}}} % higher order derivative
 \newcommand{\pydx}[2]{\frac{\partial #1}{\partial #2}} % partial derivative
 
+% logic
+\renewcommand{\iff}{\leftrightarrow}
+\newcommand{\smallspace}{\vspace{2mm}}
+
 % todo
 \newcommand{\todo}{\colorbox{red!80}{\textbf{Was unable to solve}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                              CONFIGURATION                               %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% number top level enumerates with i, ii, iii
+\renewcommand{\theenumi}{\roman{enumi}}
 
 % allow align*s to be broken over lines
 \allowdisplaybreaks
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                 METADATA                                 %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \title{\LaTeX template}
 \author{Chua Hou}
 \date{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                 DOCUMENT                                 %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{document}
 
 \maketitle
@@ -109,5 +145,33 @@ exists.
 	\EndProcedure
 \end{algorithmic}
 \end{algorithm}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item $\neg(\neg(\neg P))$
+		\item $(\neg(\neg P)) \land (\neg Q)$
+		\item Syntatically incorrect
+		\item $P \iff (Q \to Q) \iff P$
+		\item $(P \to Q) \iff (Q \to P)$
+		\item $(P \to (Q \to R)) \vdash ((P \land Q) \to R)$
+		\item $(P \to (Q \to R)) \to ((P \land Q) \to R)$
+		\item $((P \land Q) \land R) \to ((P \lor Q) \lor R)$
+	\end{enumerate}
+\end{multicols}
+
+\begin{logicproof}{1}
+	P & premiss \\
+	\begin{subproof}
+		Q & assumption \\
+		Q \land P & $\land$-intro 2,1
+	\end{subproof}
+	Q \to Q \land P & $\to$-intro 2--3
+\end{logicproof} \smallspace
+
+\begin{lstlisting}[mathescape, basicstyle=\ttfamily\footnotesize]
+eval v prop = case prop of
+		...
+		p $\veebar$ q -> eval v p `xor` eval v q
+\end{lstlisting}
 
 \end{document}

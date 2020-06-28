@@ -1,4 +1,6 @@
 alacritty
+arc-icon-theme
+arc-theme
 build-essential
 cmake
 cpufrequtils
@@ -36,7 +38,6 @@ pdf2svg
 pdftk
 pkg-config
 regolith-desktop
-regolith-look-cahuella
 snapd
 texlive
 texlive-fonts-extra

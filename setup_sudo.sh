@@ -22,7 +22,7 @@ cd installscripts
 ./ttfmscorefonts.sh
 ./authy.sh
 ./pip.sh
-apt purge xserver-xorg-input-synaptics -y
+apt-get purge --auto-remove xserver-xorg-input-synaptics -y
 	# synaptics doesn't play nicely with disable touchpad on external mouse
 cd ../scripts
 ./disable_unclutter.sh

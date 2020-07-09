@@ -1,8 +1,7 @@
 alacritty
-arc-icon-theme
-arc-theme
 build-essential
 cmake
+compton
 cpufrequtils
 curl
 doxygen
@@ -19,12 +18,7 @@ gitg
 gnome-tweak-tool
 graphviz
 haskell-platform
-i3xrocks-battery
-i3xrocks-cpu-usage
-i3xrocks-memory
-i3xrocks-net-traffic
-i3xrocks-time
-i3xrocks-wifi
+i3-gaps-wm
 ibus
 ibus-mozc
 latex-cjk-all
@@ -34,12 +28,10 @@ meld
 mozc-utils-gui
 nautilus-dropbox
 neovim
-nordvpn
 pandoc
 pdf2svg
 pdftk
-pkg-config
-regolith-desktop
+rofi
 snapd
 texlive
 texlive-fonts-extra
@@ -49,5 +41,6 @@ texlive-xetex
 tree
 vim
 vlc
+xrescat
 zathura
 zsh

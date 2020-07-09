@@ -5,7 +5,7 @@
 # Do NOT run as ROOT.
 
 # check not root
-../scripts/check_root.sh user || exit 1
+$(dirname "$0")/check_root.sh user || exit 1
 
 # install nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash

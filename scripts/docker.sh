@@ -5,7 +5,7 @@
 # Run as ROOT.
 
 # check for root
-../scripts/check_root.sh root || exit 1
+$(dirname "$0")/check_root.sh root || exit 1
 
 # remove old versions
 apt-get remove docker docker-engine docker.io containerd runc

@@ -5,7 +5,7 @@
 # Do NOT run as ROOT.
 
 # check not root
-../scripts/check_root.sh user || exit 1
+$(dirname "$0")/check_root.sh user || exit 1
 
 # remind to Ctrl+D after running below
 echo "PRESS CTRL+D AFTER INSTALLATION TO RUN REST OF SCRIPT"

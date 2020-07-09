@@ -5,7 +5,7 @@
 # Do NOT run as ROOT.
 
 # check not root
-./check_root.sh user || exit 1
+$(dirname "$0")/check_root.sh user || exit 1
 
 git config --global user.email "human+github@chuahou.dev"
 git config --global user.name "Chua Hou"

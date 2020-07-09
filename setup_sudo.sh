@@ -4,6 +4,9 @@
 #
 # Run as ROOT.
 
+# cd to script directory
+cd $(dirname "$0")
+
 # check for root
 scripts/check_root.sh root || exit 1
 
@@ -15,14 +18,10 @@ touch $ERR_FILE
 exec 1> >(tee -a "$LOG_FILE")
 exec 2> >(tee -a "$ERR_FILE")
 
-./apt-install.sh
-cd installscripts
-./fuckit.sh
-./spotify.sh
-./ttfmscorefonts.sh
-./authy.sh
-./pip.sh
+apt/apt.sh
+scripts/fuckit.sh
+scripts/spotify.sh
+scripts/ttfmscorefonts.sh
+scripts/pip.sh
 apt-get purge --auto-remove xserver-xorg-input-synaptics -y
 	# synaptics doesn't play nicely with disable touchpad on external mouse
-cd ../scripts
-./disable_unclutter.sh

@@ -23,3 +23,5 @@ scripts/telegram.sh
 scripts/nvm.sh
 scripts/iosevka.sh
 scripts/ohmyzsh.sh
+
+cd dotfiles && ./install.sh

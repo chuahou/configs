@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 #
-# Uses `apt` to install the common packages I will need on every new Ubuntu
-# installation. I started working on this late, so it will be incomplete.
-#
 # Run as ROOT.
 
 # get to this directory

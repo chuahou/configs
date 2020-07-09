@@ -15,4 +15,3 @@ wget https://telegram.org/dl/desktop/linux -O t.tar.xz
 tar xJf t.tar.xz
 mv Telegram ~
 rm t.tar.xz
-

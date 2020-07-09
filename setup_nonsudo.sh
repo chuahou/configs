@@ -18,6 +18,9 @@ touch $ERR_FILE
 exec 1> >(tee -a "$LOG_FILE")
 exec 2> >(tee -a "$ERR_FILE")
 
+# follow Windows clock system
+timedatectl set-local-rtc 1 --adjust-system-clock
+
 scripts/rust.sh
 scripts/telegram.sh
 scripts/nvm.sh

@@ -21,6 +21,7 @@ exec 2> >(tee -a "$ERR_FILE")
 apt/apt.sh
 scripts/fuckit.sh
 scripts/spotify.sh
+scripts/nordvpn.sh
 scripts/ttfmscorefonts.sh
 scripts/pip.sh
 apt-get purge --auto-remove xserver-xorg-input-synaptics -y

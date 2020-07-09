@@ -5,10 +5,10 @@
 # Run as ROOT.
 
 # check for root
-../scripts/check_root.sh root || exit 1
+$(dirname "$0")/check_root.sh root || exit 1
 
 # install Python
-apt install python3-dev python3-pip python3-setuptools -y
+apt-get install python3-dev python3-pip python3-setuptools -y
 
 # install thefuck
 pip3 install thefuck

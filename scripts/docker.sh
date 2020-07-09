@@ -5,16 +5,16 @@
 # Run as ROOT.
 
 # check for root
-../scripts/check_root.sh root || exit 1
+$(dirname "$0")/check_root.sh root || exit 1
 
 # remove old versions
-apt remove docker docker-engine docker.io containerd runc
+apt-get remove docker docker-engine docker.io containerd runc
 
 # update apt
-apt update
+apt-get update
 
-# install packages to allow apt to use HTTPS repository
-apt install apt-transport-https ca-certificates curl gnupg-agent \
+# install packages to allow apt-get to use HTTPS repository
+apt-get install apt-transport-https ca-certificates curl gnupg-agent \
     software-properties-common
 
 # add docker GPG key
@@ -24,11 +24,10 @@ apt-key fingerprint 0EBFCD88
 # add repo
 add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
     $(lsb_release -cs) stable"
-apt update
+apt-get update
 
 # install docker
-apt install docker-ce docker-ce-cli containerd.io
+apt-get install docker-ce docker-ce-cli containerd.io
 
 # run hello world
 docker run hello-world
-

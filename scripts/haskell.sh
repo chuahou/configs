@@ -7,7 +7,7 @@
 set -e
 
 # check not root
-$(dirname "$0")/../scripts/check_root.sh user || exit 1
+$(dirname "$0")/check_root.sh user || exit 1
 
 # installs prerequisites using apt
 sudo apt-get install libicu-dev libncurses-dev libgmp-dev zlib1g-dev

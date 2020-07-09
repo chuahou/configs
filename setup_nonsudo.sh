@@ -4,6 +4,9 @@
 #
 # Do NOT run as ROOT.
 
+# cd to script directory
+cd $(dirname "$0")
+
 # check for root
 scripts/check_root.sh user || exit 1
 
@@ -15,26 +18,13 @@ touch $ERR_FILE
 exec 1> >(tee -a "$LOG_FILE")
 exec 2> >(tee -a "$ERR_FILE")
 
-# misc installs
-cd installscripts
-./rust.sh
-./telegram.sh
-./ohmyzsh.sh
-./nvm.sh
-cd ..
+# follow Windows clock system
+timedatectl set-local-rtc 1 --adjust-system-clock
 
-# configure git
-cd scripts
-./git_config.sh
+scripts/rust.sh
+scripts/telegram.sh
+scripts/nvm.sh
+scripts/iosevka.sh
+scripts/ohmyzsh.sh
 
-# get fonts
-./wget_fonts.sh
-
-# get dynamic-wallpaper
-./dynamic_wallpaper.sh
-
-# set touchpad to disable on external
-gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled-on-external-mouse
-
-# set mouse acceleration to flat
-gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
+cd dotfiles && ./install.sh

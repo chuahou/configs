@@ -18,11 +18,16 @@ touch $ERR_FILE
 exec 1> >(tee -a "$LOG_FILE")
 exec 2> >(tee -a "$ERR_FILE")
 
+# installation scripts
 apt/apt.sh
 scripts/fuckit.sh
-scripts/spotify.sh
 scripts/nordvpn.sh
-scripts/ttfmscorefonts.sh
 scripts/pip.sh
-apt-get purge --auto-remove xserver-xorg-input-synaptics -y
-	# synaptics doesn't play nicely with disable touchpad on external mouse
+scripts/spotify.sh
+scripts/ttfmscorefonts.sh
+
+# print
+git clone https://github.com/chuahou/userxinitrc.git userxinitrc
+cd userxinitrc
+make install
+cd .. && rm userxinitrc -rf

@@ -24,3 +24,6 @@ cd .. && rm haskell-language-server -rf
 
 # installs hlint
 stack install hlint -j4
+
+# installs ghcid
+stack install ghcid -j4

@@ -27,3 +27,6 @@ stack install hlint -j4
 
 # installs ghcid
 stack install ghcid -j4
+
+# install stylish-haskell
+stack install stylish-haskell -j4

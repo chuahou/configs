@@ -19,6 +19,7 @@ curl -sSL https://get.haskellstack.org/ | sh
 git clone https://github.com/haskell/haskell-language-server
 cd haskell-language-server
 stack ./install.hs hls-$(ghc --version | rev | cut -d ' ' -f 1 | rev) -j4
+stack ./install.hs hls-$(stack ghc -- --version | rev | cut -d ' ' -f 1  |rev) -j4
 stack ./install.hs data
 cd .. && rm haskell-language-server -rf
 
